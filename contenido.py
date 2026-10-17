@@ -35,3 +35,13 @@ class Pelicula(Contenido):
 
     def mostrar_info(self):
         return "PELÍCULA: " + super().mostrar_info() + f" - {self.__duracion} min"
+
+class Serie(Contenido):
+    """Serie: agrega la cantidad de temporadas."""
+
+    def __init__(self, titulo, genero, anio, temporadas):
+        super().__init__(titulo, genero, anio)
+        self.__temporadas = temporadas
+
+    def mostrar_info(self):
+        return "SERIE: " + super().mostrar_info() + f" - {self.__temporadas} temporadas"
