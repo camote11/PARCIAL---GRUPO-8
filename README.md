@@ -11,7 +11,7 @@
 ## Integrantes
 | Usuario GitHub | Apellidos y Nombres | Código |
 |---|---|---|
-| @usuario1 | Apellidos y Nombres | código |
+| @alexb2k | Bustamante Bustamante Alex Kelvin | 20231481 |
 | @camote11 | Sánchez Cáceres Danuska Brunela | 20250423 |
 | @Mel21-m | Meneses Miguel Melany Margot | 20250412 |
 | @Frdiazb | Diaz Barbosa Francisco Roberto  | 20250397 |
