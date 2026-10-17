@@ -45,3 +45,14 @@ class Serie(Contenido):
 
     def mostrar_info(self):
         return "SERIE: " + super().mostrar_info() + f" - {self.__temporadas} temporadas"
+
+def cargar_datos(plataforma):
+  
+    plataforma.agregar_contenido(Pelicula("El Rey León", "Animación", 1994, 88))
+    plataforma.agregar_contenido(Pelicula("Frozen", "Animación", 2013, 102))
+    plataforma.agregar_contenido(Pelicula("Coco", "Animación", 2017, 105))
+    plataforma.agregar_contenido(Pelicula("Avengers: Endgame", "Acción", 2019, 181))
+    plataforma.agregar_contenido(Pelicula("Black Panther", "Acción", 2018, 134))
+    plataforma.agregar_contenido(Serie("The Mandalorian", "Ciencia ficción", 2019, 3))
+    plataforma.agregar_contenido(Serie("Loki", "Fantasía", 2021, 2))
+    plataforma.agregar_contenido(Serie("Bluey", "Animación", 2018, 3))
