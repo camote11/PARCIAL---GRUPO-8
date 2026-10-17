@@ -1,0 +1,27 @@
+class Contenido:
+  def __init__(self, titulo, año, genero, clasificacion, tipo):
+        self.__titulo = titulo
+        self.__año = año
+        self.__genero = genero
+        self.__clasificacion = clasificacion
+        self.__tipo = tipo
+
+    def get_titulo(self):
+        return self.__titulo
+
+    def get_anio(self):
+        return self.__año
+
+    def get_genero(self):
+        return self.__genero
+
+    def get_clasificacion(self):
+        return self.__clasificacion
+
+    def get_tipo(self):
+        return self.__tipo
+#Falta el contenido 
+    def mostrar_info(self):
+        return (f"{self.__titulo} ({self.__año}) - "
+            f"{self.__tipo} - {self.__genero} - "
+            f"Clasificación: {self.__clasificacion}")
