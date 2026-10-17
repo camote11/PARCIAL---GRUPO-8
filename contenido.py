@@ -25,3 +25,13 @@ class Contenido:
         return (f"{self.__titulo} ({self.__año}) - "
             f"{self.__tipo} - {self.__genero} - "
             f"Clasificación: {self.__clasificacion}")
+
+class Pelicula(Contenido):
+    """Película: agrega la duración."""
+
+    def __init__(self, titulo, genero, anio, duracion):
+        super().__init__(titulo, genero, anio)
+        self.__duracion = duracion
+
+    def mostrar_info(self):
+        return "PELÍCULA: " + super().mostrar_info() + f" - {self.__duracion} min"
