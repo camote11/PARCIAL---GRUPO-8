@@ -35,8 +35,18 @@ grupo-8/
     └── main.py
 ```
 
+## Tecnologías
+
+- Python 3
+- Git
+- GitHub
+
+---
+
 ## Descripción del Escenario
 El proyecto consiste en la simulación interactiva en consola de una plataforma de *streaming* inspirada en Disney+. El sistema permite gestionar la autenticación de usuarios, la suscripción a planes de servicio, la navegación dentro de un catálogo multimedia de peliculas y series, la reproducción interactiva, la gestión de listas de seguimiento (*Mi lista*), el registro de historial de ocntenido visto y la calificación.
+
+---
 
 ## Objetivos del proyecto
 
