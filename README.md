@@ -12,7 +12,7 @@
 | Usuario GitHub | Apellidos y Nombres | Código |
 |---|---|---|
 | @usuario1 | Apellidos y Nombres | código |
-| @usuario2 | Apellidos y Nombres | código |
+| @camote11 | Sánchez Cáceres Danuska Brunela | 20250423 |
 | @Mel21-m | Meneses Miguel Melany Margot | 20250412 |
 | @Frdiazb | Diaz Barbosa Francisco Roberto  | 20250397 |
 
