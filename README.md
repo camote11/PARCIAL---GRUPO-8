@@ -3,6 +3,7 @@
 # Simulador de Plataforma Streaming (Disney+)
 
 **Curso:** Lenguaje de Programación II
+
 **Ciclo:** 2026-2
 
 ---
