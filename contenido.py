@@ -10,7 +10,7 @@ class Contenido:
     def get_titulo(self):
         return self.__titulo
 
-    def get_anio(self):
+    def get_año(self):
         return self.__año
 
     def get_genero(self):
