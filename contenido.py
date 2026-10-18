@@ -53,6 +53,12 @@ def calificar(self, puntaje):
         return True
     return False
 
+def promedio(self):
+    """Promedio de las calificaciones (0 si aún no tiene)."""
+    if len(self.__calificaciones) == 0:
+        return 0
+    return sum(self.__calificaciones) / len(self.__calificaciones)
+
 def cargar_datos(plataforma):
   
     plataforma.agregar_contenido(Pelicula("El Rey León", "Animación", 1994, 88))
