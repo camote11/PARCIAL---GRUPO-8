@@ -1,6 +1,6 @@
 class Contenido:
 
-  def __init__(self, titulo, año, genero, clasificacion, tipo):
+    def __init__(self, titulo, año, genero, clasificacion, tipo):
         self.__titulo = titulo
         self.__año = año
         self.__genero = genero
