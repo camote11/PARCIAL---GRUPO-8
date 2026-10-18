@@ -46,6 +46,13 @@ class Serie(Contenido):
     def mostrar_info(self):
         return "SERIE: " + super().mostrar_info() + f" - {self.__temporadas} temporadas"
 
+def calificar(self, puntaje):
+    """Guarda un puntaje de 1 a 5. Devuelve False si es inválido."""
+    if 1 <= puntaje <= 5:
+        self.__calificaciones.append(puntaje)
+        return True
+    return False
+
 def cargar_datos(plataforma):
   
     plataforma.agregar_contenido(Pelicula("El Rey León", "Animación", 1994, 88))
