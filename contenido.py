@@ -29,8 +29,8 @@ class Contenido:
 class Pelicula(Contenido):
     """Película: agrega la duración."""
 
-    def __init__(self, titulo, genero, anio, duracion):
-        super().__init__(titulo, genero, anio)
+    def __init__(self, titulo, genero, año, duracion, clasificacion="ATP", tipo="Película"):
+        super().__init__(titulo, año, genero, clasificacion, tipo)
         self.__duracion = duracion
 
     def mostrar_info(self):
