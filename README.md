@@ -18,23 +18,6 @@
 
 ---
 
-## Estructura del repositorio
-Para mantener el código en orden y no obtener solo un gran archivo en el que la información este desordenada, se separó todo el contenido por módulos dentro de la carpeta "src/". La estructura de manera gráfica funciona así:
-
-```text
-grupo-8/
-├── .gitignore
-├── README.md
-├── docs/
-│   └── informe.md
-├── capturas/
-│   └── ejecucion_prueba.txt
-└── src/
-    ├── plan.py
-    ├── models.py
-    └── main.py
-```
-
 ## Tecnologías
 
 - Python 3
