@@ -39,8 +39,8 @@ class Pelicula(Contenido):
 class Serie(Contenido):
     """Serie: agrega la cantidad de temporadas."""
 
-    def __init__(self, titulo, genero, anio, temporadas):
-        super().__init__(titulo, genero, anio)
+    def __init__(self, titulo, genero, año, temporadas, clasificacion="ATP", tipo="Serie"):
+        super().__init__(titulo, año, genero, clasificacion, tipo)
         self.__temporadas = temporadas
 
     def mostrar_info(self):
