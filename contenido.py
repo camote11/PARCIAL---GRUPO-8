@@ -6,6 +6,7 @@ class Contenido:
         self.__genero = genero
         self.__clasificacion = clasificacion
         self.__tipo = tipo
+        self.__calificaciones = []
 
     def get_titulo(self):
         return self.__titulo
