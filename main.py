@@ -115,6 +115,7 @@ def main():
     cargar_datos(plataforma)
     # usuario de prueba
     plataforma.registrar_usuario("Demo", "demo@gmail.com", "1234", "Premium")
+    plataforma.registrar_usuario("Melany", "melany@gmail.com", "4321", "Basico")
 
     while True:
         print("\n=== DISNEY+ ===")
