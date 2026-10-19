@@ -28,7 +28,7 @@ class Contenido:
     def calificar(self, puntaje):
         """Guarda un puntaje de 1 a 5. Devuelve False si es inválido."""
         if 1 <= puntaje <= 5:
-        self.__calificaciones.append(puntaje)
+            self.__calificaciones.append(puntaje)
             return True
         return False
 
