@@ -26,17 +26,17 @@ class Contenido:
             f"{self.__tipo} - {self.__genero} - "
             f"Clasificación: {self.__clasificacion}")
     def calificar(self, puntaje):
-    """Guarda un puntaje de 1 a 5. Devuelve False si es inválido."""
-    if 1 <= puntaje <= 5:
+        """Guarda un puntaje de 1 a 5. Devuelve False si es inválido."""
+        if 1 <= puntaje <= 5:
         self.__calificaciones.append(puntaje)
-        return True
-    return False
+            return True
+        return False
 
     def promedio(self):
-    """Promedio de las calificaciones (0 si aún no tiene)."""
-    if len(self.__calificaciones) == 0:
-        return 0
-    return sum(self.__calificaciones) / len(self.__calificaciones)
+        """Promedio de las calificaciones (0 si aún no tiene)."""
+        if len(self.__calificaciones) == 0:
+            return 0
+        return sum(self.__calificaciones) / len(self.__calificaciones)
 
 class Pelicula(Contenido):
     """Película: agrega la duración."""
