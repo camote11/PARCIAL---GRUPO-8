@@ -1,32 +1,53 @@
 class Contenido:
+"""Clase base que representa un contenido en el catálogo.
+    Atributos:
+        titulo (str): Título de la obra.
+        año (int): Año de estreno.
+        genero (str): Género cinematográfico o televisivo.
+        clasificacion (str): Clasificación por edad (ej. ATP, +13).
+        tipo (str): Tipo de contenido ('Película' o 'Serie').
+        puntaje(List[int]): Lista de puntaje que otorgan los usuarios (entre 1 y 5)"""
 
     def __init__(self, titulo, año, genero, clasificacion, tipo):
-        self.__titulo = titulo
-        self.__año = año
-        self.__genero = genero
-        self.__clasificacion = clasificacion
-        self.__tipo = tipo
-        self.__calificaciones = []
+        """Inicializa los atributos principales de un contenido."""
+        self.__titulo: str = titulo
+        self.__año: int = año
+        self.__genero: str = genero
+        self.__clasificacion: str = clasificacion  
+        self.__tipo: str = tipo
+        self.__puntajes: List[int] = []  
 
     def get_titulo(self):
+        """Obtiene el título del contenido."""
         return self.__titulo
 
     def get_año(self):
+        """Obtiene el año de estreno del contenido."""
         return self.__año
 
     def get_genero(self):
+        """Obtiene el género del contenido."""
         return self.__genero
 
     def get_clasificacion(self):
+        """Obtiene la clasificación por edad del contenido."""
         return self.__clasificacion
 
     def get_tipo(self):
+        """Obtiene el tipo de contenido"""
         return self.__tipo
+
+    def get_puntajes(self) -> List[int]:
+        """Obtiene una copia de la lista de puntajes recibidos."""
+        return list(self.__puntajes)
+        
     def mostrar_info(self):
+        """Devuelve un string con los datos generales del contenido."""
         return (f"{self.__titulo} ({self.__año}) - "
             f"{self.__tipo} - {self.__genero} - "
             f"Clasificación: {self.__clasificacion}")
-    def calificar(self, puntaje):
+        
+    def brinda_puntaje(self, puntaje):
         """Guarda un puntaje de 1 a 5. Devuelve False si es inválido."""
         if 1 <= puntaje <= 5:
             self.__calificaciones.append(puntaje)
@@ -45,8 +66,13 @@ class Pelicula(Contenido):
     def __init__(self, titulo, genero, año, duracion, clasificacion="ATP", tipo="Película"):
         super().__init__(titulo, año, genero, clasificacion, tipo)
         self.__duracion = duracion
+        
+    def get_duracion(self):
+        """Obtiene la duración en minutos de la película."""
+        return self.__duracion
 
     def mostrar_info(self):
+        """Modifica mostrar_info para que también imprima la duración."""
         return "PELÍCULA: " + super().mostrar_info() + f" - {self.__duracion} min"
 
 class Serie(Contenido):
@@ -56,11 +82,16 @@ class Serie(Contenido):
         super().__init__(titulo, año, genero, clasificacion, tipo)
         self.__temporadas = temporadas
 
+    def get_temporadas(self):
+        """Obtiene la cantidad de temporadas de la serie."""
+        return self.__temporadas
+
     def mostrar_info(self):
+        """Modifica mostrar_info para incluir las temporadas."""
         return "SERIE: " + super().mostrar_info() + f" - {self.__temporadas} temporadas"
 
-
 def cargar_datos(plataforma):
+    """Precarga el catálogo inicial de películas y series en la plataforma."""
   
     plataforma.agregar_contenido(Pelicula("El Rey León", "Animación", 1994, 88))
     plataforma.agregar_contenido(Pelicula("Frozen", "Animación", 2013, 102))
